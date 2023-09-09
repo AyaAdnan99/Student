@@ -1,0 +1,301 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Amiri&family=Scheherazade+New:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    padding: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: #0c2c43;
+    font-family: "amiri";
+}
+.containeer{
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    background: #ededed;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 10 10 30px #432323;
+}
+
+
+.containeer header{
+    font-size: 1.5rem;
+    color: #081b29;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+
+
+.containeer .form {
+    margin-top: 30px;
+    align-items: center;
+    flex-wrap:wrap;
+
+}
+.form .header2 input{
+    font-size: 1rem;
+    color: #29080f;
+    font-weight: 500;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    outline: none;
+    margin-top: 8px;
+    border: 1px solid #ededed;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.form .input-box{
+  color:black;
+   width: 100%;
+    margin-top: 20px;
+
+}
+.input-box label{
+    color: #290815;
+}
+
+.form :where( .input-box input,.select-box){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 2rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ededed;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 20px;
+
+}
+.column{
+    display: flex;
+    column-gap:30px;
+
+}
+
+
+@media screen and(max-width: 500px) {
+    .form .column{
+        flex-wrap: wrap;
+    }
+}
+
+hr{
+    margin-top:30px ;
+    margin-bottom: 15px;
+    border-radius: 12px;
+  border-top: 5px solid #081b29;
+}
+
+.select-box{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ededed;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.select-box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size:18px;
+}
+
+.select-box label{
+    color: #163f5c;
+}
+
+.br2{
+   border: 1px solid #11334c;
+}
+
+.form .submet{
+    height: 55px;
+    width: 100%;
+    background-color:#062275 ;
+    color: #ededed;
+    font-size: 1.5rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 400;
+    transition: all 0.2s ease;
+
+}
+
+.form .submet:hover{
+    background-color:#1c3190 ;
+}
+
+ button {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+     border: 2px solid #324960;
+    height: 50px;
+    border-radius: 8px ;
+    font-size: 22px;
+     background-color:#324960; ;
+     color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+
+}
+
+
+
+ button :hover{
+    background: #0e1f6c;
+}
+
+
+
+
+
+
+
+
+
+.table-wrapper{
+    margin: 10px 5px 70px;
+
+    box-shadow: 30px 75px 70px rgba(70, 35, 35, 0.441);
+    border-radius: 20px;
+}
+
+.fl-table {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    font-size: 18px;
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    font-size: 18px;
+    border-right: 1px solid #f8f8f8;
+
+}
+
+.fl-table thead th {
+
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #6f2222;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 967px) {
+    .fl-table {
+         height: 50px;
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 18px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child{
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td, .fl-table th {
+
+        padding: 20px .625em .625em .625em;
+        height: 70px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 150px;
+        font-size: 18px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        border-radius: 20px;
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}

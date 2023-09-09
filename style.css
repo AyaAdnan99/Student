@@ -1,0 +1,153 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #ededed;
+}
+
+
+.header{
+    position: fixed;
+    align-items: center;
+    justify-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+
+
+
+}
+.header img{
+
+    left: 0;
+    height: 80px;
+    width: 80px;
+}
+.logo{
+    font-size: 25px;
+    color:#ededed;
+    text-decoration: none;
+    font-weight:600 ;
+}
+
+.Image{
+
+    float: right;
+}
+
+
+.home{
+    background: url("Images/b1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    padding: 14% 70px ;
+
+}
+
+.home-content{
+
+    max-width: 600px;
+
+}
+
+
+.home-content h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content p{
+    font-size: 24px;
+    margin: 20px 0 4px 40px;
+    color: #ffff70
+}
+
+.home-content .btn{
+    justify-content: space-between;
+    display: flex;
+    width: 400px;
+    height: 50px;
+    background:transparent;
+}
+
+.btn .button{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px ;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn .button:hover{
+    color: #00abf0;
+    background: #081b29;
+}
+.btn .inputtext{
+
+    display: inline-flex;
+    margin-left: 7px;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 8px ;
+    font-size: 19px;
+    color:#ededed;
+    padding: 0 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+
+.btn .button::before{
+  content:'';
+    position: absolute;
+    top: 0;
+    left:0;
+    width:0;
+    height: 100%;
+    background:#081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn .button:hover::before{
+    width: 100%;
+}
+
+
+
+

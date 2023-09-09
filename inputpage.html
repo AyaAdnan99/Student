@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content ="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+    <title>استمارة تسجيل الطلبة</title>
+
+</head>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.0.min.js"></script>
+<script type="text/javascript">
+    function addDominant(){
+        $('#domain').append($('#container').clone());
+    }
+
+</script>
+<body dir="rtl">
+<section class="containeer">
+<header>استمارة تسجيل الطلبة</header>
+  <form action="Add_Parent.php" class="form">
+
+
+
+
+<div class="column">
+
+    <div class="input-box">
+        <div class="select-box">
+            <label>المحافظة</label>
+            <select  required oninvalid="setCustomValidity('ادخل اسم المحافظة') "oninput="setCustomValidity('')" >
+                <option value="">المحافظة</option>
+                <option value="بغداد">بغداد</option>
+                <option value="البصرة">البصرة</option>
+                <option value="الموصل">الموصل</option>
+                <option value="كربلاء">كربلاء</option>
+                <option value="النجف">النجف</option>
+                <option value="ذي قار">ذي قار</option>
+                <option value="المثنى">المثنى</option>
+                <option value="صلاح الدين">صلاح الدين</option>
+                <option value="ديالى">ديالى</option>
+                <option value="الديوانية ">الديوانية</option>
+                <option value="بابل">بابل</option>
+                <option value="الانبار">الانبار</option>
+                <option value="كركوك ">كركوك</option>
+                <option value="ميسان">ميسان</option>
+                <option value="واسط">واسط</option>
+
+
+
+
+            </select>
+
+        </div></div>
+
+    <div class="input-box">
+        <label>القضاء</label>
+        <input type="text" placeholder="القضاء"required oninvalid="setCustomValidity('ادخل رقم البطاقة الذكية') "oninput="setCustomValidity('')">
+    </div>
+
+</div>
+
+
+
+      <div class="column">
+
+          <div class="input-box">
+              <label>الناحية</label>
+              <input type="text" placeholder="الناحية" required oninvalid="setCustomValidity('ادخل الناحية') "oninput="setCustomValidity('')" >
+          </div>
+
+          <div class="input-box">
+              <div class="select-box">
+                  <label>اسم التربية</label>
+                  <select required oninvalid="setCustomValidity('ادخل اسم التربية') "oninput="setCustomValidity('')" >
+                      <option value="">اسم التربية</option>
+                      <option value="الرصافة الاولى ">الرصافة الاولى</option>
+                      <option value="الرصافة الثانية ">الرصافة الثانية</option>
+                      <option value="الرصافة الثالثة">الرصافة الثالثة</option>
+                      <option value="الكرخ الاولى">الكرخ الاولى</option>
+                      <option value="الكرخ الثانية">الكرخ الثانية</option>
+                      <option value="الكرخ الثالثة">الكرخ الثالثة</option>
+                      <option value="بغداد">بغداد</option>
+                      <option value="البصرة">البصرة</option>
+                      <option value="الموصل">الموصل</option>
+                      <option value="كربلاء">كربلاء</option>
+                      <option value="النجف">النجف</option>
+                      <option value="ذي قار">ذي قار</option>
+                      <option value="المثنى">المثنى</option>
+                      <option value="صلاح الدين">صلاح الدين</option>
+                      <option value="ديالى">ديالى</option>
+                      <option value="الديوانية">الديوانية</option>
+                      <option value="بابل">بابل</option>
+                      <option value="الانبار">الانبار</option>
+                      <option value="كركوك">كركوك</option>
+                      <option value="ميسان">ميسان</option>
+                      <option value="واسط">واسط</option>
+
+
+
+
+                  </select>
+
+              </div></div>
+
+      </div>
+
+
+      <hr>
+
+       <header>معلومات رب الاسرة المشمول بالرعاية الاجتماعية</header>
+
+      <div class="column">
+
+          <div class="input-box">
+              <label>الاسم الاول</label>
+              <input type="text" placeholder="الاسم الاول"  required oninvalid="setCustomValidity('ادخل الاسم الاول') "oninput="setCustomValidity('')" >
+          </div>
+
+          <div class="input-box">
+              <label>الاسم الثاني</label>
+              <input type="text" placeholder="الاسم الثاني" required oninvalid="setCustomValidity('ادخل الاسم الثاني') "oninput="setCustomValidity('')" >
+          </div>
+
+      </div>
+
+          <div class="column">
+          <div class="input-box">
+              <label>الاسم الثالث</label>
+              <input type="text" placeholder="الاسم الثالث"  required oninvalid="setCustomValidity('ادخل الاسم الثالث') "oninput="setCustomValidity('')">
+          </div>
+
+          <div class="input-box">
+              <label>الاسم الرابع</label>
+              <input type="text" placeholder="الاسم الرابع" required oninvalid="setCustomValidity('ادخل الاسم الرابع') "oninput="setCustomValidity('')" >
+          </div>
+
+      </div>
+
+
+
+      <div class="column">
+
+          <div class="input-box">
+              <label>اسم الام الثلاثي</label>
+              <input type="text" placeholder="اسم الام الثلاثي"  required oninvalid="setCustomValidity('ادخل اسم الام الثلاثي') "oninput="setCustomValidity('')">
+          </div>
+
+          <div class="input-box">
+              <label>رقم البطاقة الوطنية</label>
+              <input type="text" placeholder="رقم البطاقة الوطنية" required oninvalid="setCustomValidity('ادخل رقم البطاقة الوطنية') "oninput="setCustomValidity('')" >
+          </div>
+
+      </div>
+
+      <div class="column">
+
+          <div class="input-box">
+              <label>رقم هوية الاحوال المدنية</label>
+              <input type="text" placeholder="رقم هوية الاحوال المدنية"  required oninvalid="setCustomValidity('ادخل رقم هوية الاحوال المدنية') "oninput="setCustomValidity('')">
+          </div>
+
+          <div class="input-box">
+              <label>السجل</label>
+              <input type="text" placeholder="السجل"  >
+          </div>
+
+          <div class="input-box">
+              <label>الصحيفة</label>
+              <input type="text" placeholder="الصحيفة">
+          </div>
+
+
+      </div>
+
+
+      <hr>
+  </form>
+<form class="form">
+   <header>معلومات الابناء</header>
+      <div class="header2">
+          <label>عدد الابناء</label>
+          <input type="text" placeholder="0" required oninvalid="setCustomValidity('ادخل عدد الابناء') "oninput="setCustomValidity('')">
+      </div>
+
+
+
+
+
+
+
+        <div id="container" >
+
+
+      <div class="column">
+
+          <div class="input-box">
+              <label>اسم الطالب الثلاثي</label>
+              <input type="text" placeholder="اسم الطالب الثلاثي"  required oninvalid="setCustomValidity('ادخل اسم الطالب الثلاثي') "oninput="setCustomValidity('')">
+          </div>
+
+          <div class="input-box">
+              <label>اسم المدرسة</label>
+              <input type="text" placeholder="اسم المدرسة"  required oninvalid="setCustomValidity('ادخل اسم المدرسة') "oninput="setCustomValidity('')" >
+          </div>
+
+
+
+      </div>
+            <br>
+            <label>تاريخ الميلاد</label>
+      <div class="column">
+
+          <div class="input-box">
+              <label>يوم</label>
+              <input type="text" placeholder="يوم"  required oninvalid="setCustomValidity('ادخل اليوم') "oninput="setCustomValidity('')">
+          </div>
+
+          <div class="input-box">
+              <label>شهر </label>
+              <input type="text" placeholder="شهر"required oninvalid="setCustomValidity('ادخل الشهر') "oninput="setCustomValidity('')"  >
+          </div>
+
+          <div class="input-box">
+              <label>سنة </label>
+              <input type="text" placeholder="سنة" required oninvalid="setCustomValidity('ادخل السنة') "oninput="setCustomValidity('')" >
+          </div>
+
+
+          <div class="input-box">
+          <div class="select-box">
+              <label>الجنس</label>
+              <select>
+                  <option>ذكر</option>
+                  <option>انثى</option>
+              </select>
+
+          </div></div>
+      </div>
+
+      <div class="column">
+
+          <div class="input-box">
+              <div class="select-box">
+                  <label>المرحلة</label>
+                  <select>
+                      <option>الابتدائية</option>
+                      <option>المتوسطة</option>
+                      <option>الاعدادية</option>
+
+                  </select>
+
+              </div></div>
+
+          <div class="input-box">
+              <label>الصف</label>
+              <input type="text" placeholder="الصف"  required oninvalid="setCustomValidity('ادخل الصف') "oninput="setCustomValidity('')">
+          </div>
+
+
+      </div>
+
+        </div>
+     <br>
+      <div id="domain">
+
+</div>
+
+           <button class="aa" onclick="addDominant()" >اضافة ابن</button>
+      <br>
+    <br>
+<br>
+
+    <div class="table-wrapper">
+        <table dir="rtl" class="fl-table">
+            <thead>
+            <tr>
+                <th>الاسم الثلاثي</th>
+                <th>اسم المدرسة</th>
+                <th>المواليد</th>
+                <th>الجنس</th>
+                <th>المرحلة</th>
+                <th>الصف</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Content 1 </td>
+                <td>Content 1</td>
+                <td>Content 1</td>
+                <td>Content 1</td>
+                <td>Content 4</td>
+                <td>Content 1</td>
+            </tr>
+            <tr>
+                <td>Content 2</td>
+                <td>Content 2</td>
+                <td>Content 2</td>
+                <td>Content 2</td>
+                <td>Content 2</td>
+                <td>Content 4</td>
+            </tr>
+            <tr>
+                <td>Content 3</td>
+                <td>Content 3</td>
+                <td>Content 3</td>
+                <td>Content 3</td>
+                <td>Content 3</td>
+                <td>Content 4</td>
+            </tr>
+            <tr>
+                <td>Content 4</td>
+                <td>Content 4</td>
+                <td>Content 4</td>
+                <td>Content 4</td>
+                <td>Content 4</td>
+                <td>Content 4</td>
+
+            </tr>
+            <tr>
+                <td>Content 5</td>
+                <td>Content 5</td>
+                <td>Content 5</td>
+                <td>Content 5</td>
+                <td>Content 5</td>
+                <td>Content 5</td>
+            </tr>
+
+            <tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+      <input class="submet" type="submit" value="ارسال">
+
+  </form>
+
+</section>
+</body>
+</html>
